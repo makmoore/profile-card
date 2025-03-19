@@ -7,6 +7,7 @@ To create an intereactive profile card in order to pracice using javascript, htm
 - `index.html` - the main page for the profile card
 - `script.js` - the file containing javascript
 - `style.css` - the file with css styling
+- `default.jpg` - the default image for the profile
 
 ## Assignment Description
 An Interactive Profile Card web application where users can enter their details and see a dynamically updated profile card.
