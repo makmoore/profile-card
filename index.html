@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+	<meta charset="UTF-8"> <!-- Sets character rendering -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page scaling match device size -->
+	
+	<link rel="stylesheet" href="style.css"> <!-- Links to the css file -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script src="script.js" type="text/javascript" defer></script> <!-- Links to the JavaScript file -->
+
+    <title>Edit Profile</title> <!-- Website title -->
+
+</header>
+
+<body>
+
+        <article>
+        <div id="pagetheme" class="profilecardlt">  <!-- the class changes with the toggle feature -->
+            
+            <h2>Profile Card</h2> <!-- heading -->
+            <br><br>
+
+            <input type="text" id="name" name="name" placeholder="Enter your Username"> <!-- input box with placeholder text -->
+            <textarea id="bio" name="bio" placeholder="Write a short bio..."></textarea> <!-- bigger box for a longer response -->
+    
+            <input type="file" id="fileName" name="filename" accept="image/*"><br> <!-- takes an image file only -->
+            
+            <!-- these are the buttons that will do things with js -->
+            <button type="button" id="update">Update Profile</button>
+            <button id="theme">Toggle Theme</button>
+            <button id="showdetails">Show/Hide Details</button>
+            <br><br>
+
+            <!-- This shows the current profile -->
+            <h3>Profile Information</h3> <!-- title -->
+            <img id="displayPic" src="default.jpg" alt="Profile Picture"> <!-- the profile picture, has a default image -->
+
+            <p><b><span id="displayName">User 1</span></b></p> <!-- span updates the text with js, the User 1 is the default text -->
+            <p id="showhidebio"><span id="displayBio">This is the default bio.</span></p> <!-- same as above -->
+        </div>
+        </article>
+
+</body>
+
+</html>
